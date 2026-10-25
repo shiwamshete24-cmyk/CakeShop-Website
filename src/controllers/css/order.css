@@ -1,0 +1,145 @@
+.order-page{
+    background:#fff8f5;
+    min-height:100vh;
+}
+
+.order-header{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.order-header h1{
+    font-size:48px;
+    font-weight:700;
+}
+
+.order-header p{
+    color:#666;
+}
+
+.order-stat-card{
+    background:white;
+    border-radius:20px;
+    padding:25px;
+    text-align:center;
+    box-shadow:0 8px 25px rgba(0,0,0,.06);
+}
+
+.order-stat-card h2{
+    color:#ff6b35;
+    font-weight:700;
+}
+
+.order-list-card{
+    background:white;
+    padding:30px;
+    border-radius:25px;
+    box-shadow:0 8px 25px rgba(0,0,0,.06);
+}
+
+.single-order{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 0;
+    border-bottom:1px solid #eee;
+}
+
+.order-left{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.order-btn-group{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+.cancel-order-btn{
+    border:none;
+    background:#ff6b35;
+    color:white;
+    padding:10px 18px;
+    border-radius:30px;
+}
+
+.cancel-order-btn:hover{
+    background:#c62828;
+}
+
+.status.cancelled{
+    background:#f70505;
+    color:white;
+}
+
+.cake-order-img{
+    width:90px;
+    height:90px;
+    object-fit:cover;
+    border-radius:15px;
+}
+
+.order-date{
+    color:#777;
+    font-size:14px;
+}
+
+.order-right{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.status{
+    padding:8px 15px;
+    border-radius:30px;
+    font-size:13px;
+    font-weight:600;
+}
+
+.delivered{
+    background:#d4edda;
+    color:#198754;
+}
+
+.pending{
+    background:#fff3cd;
+    color:#856404;
+}
+
+.shipped{
+    background:#d1ecf1;
+    color:#0c5460;
+}
+
+.track-btn{
+    border:none;
+    background:rgb(115, 87, 115);
+    color:white;
+    padding:10px 18px;
+    border-radius:30px;
+    margin-bottom: 10px;
+}
+
+@media(max-width:768px){
+
+    .single-order{
+        flex-direction:column;
+        gap:20px;
+        text-align:center;
+    }
+
+    .order-left{
+        flex-direction:column;
+    }
+
+    .order-right{
+        flex-direction:column;
+    }
+
+    .order-header h1{
+        font-size:32px;
+    }
+}

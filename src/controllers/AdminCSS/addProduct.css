@@ -1,0 +1,348 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f5f7fb;
+}
+
+/* ==========================
+   ADMIN LAYOUT
+========================== */
+
+.admin-layout{
+    display:flex;
+    min-height:100vh;
+}
+
+/* ==========================
+   SIDEBAR
+========================== */
+
+.sidebar{
+    width:260px;
+    background:#111827;
+    color:white;
+    position:fixed;
+    left:0;
+    top:0;
+    height:100vh;
+    padding:25px 20px;
+    overflow-y:auto;
+}
+
+.sidebar-logo{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.sidebar-logo h2{
+    color:#ff6b35;
+    font-size:30px;
+    font-weight:700;
+}
+
+.sidebar-menu{
+    list-style:none;
+    padding:0;
+}
+
+.sidebar-menu li{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    padding:15px 18px;
+    border-radius:12px;
+    margin-bottom:10px;
+    cursor:pointer;
+    transition:.3s;
+    font-size:15px;
+    font-weight:500;
+}
+
+.sidebar-menu li:hover{
+    background:#1f2937;
+}
+
+.sidebar-menu li i{
+    width:20px;
+    text-align:center;
+}
+
+.active-menu{
+    background:#ff6b35;
+}
+
+.active-menu:hover{
+    background:#ff6b35 !important;
+}
+
+/* ==========================
+   MAIN CONTENT
+========================== */
+
+.main-content{
+    flex:1;
+    margin-left:260px;
+    padding:30px;
+}
+
+/* ==========================
+   HEADER
+========================== */
+
+.page-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:30px;
+}
+
+.page-header h2{
+    font-size:34px;
+    font-weight:700;
+    color:#1f2937;
+    margin-bottom:5px;
+}
+
+.page-header p{
+    color:#6b7280;
+    margin:0;
+}
+
+.back-btn{
+    border:none;
+    background:#ff6b35;
+    color:white;
+    padding:12px 25px;
+    border-radius:12px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.back-btn:hover{
+    background:#e86a2c;
+    transform:translateY(-2px);
+}
+
+/* ==========================
+   FORM CARD
+========================== */
+
+.form-card{
+    background:white;
+    padding:35px;
+    border-radius:25px;
+    box-shadow:0 10px 30px rgba(0,0,0,.06);
+    width:100%;
+}
+
+.form-card h4{
+    font-size:24px;
+    font-weight:700;
+    color:#1f2937;
+    margin-bottom:30px;
+    padding-bottom:15px;
+    border-bottom:1px solid #eee;
+}
+
+/* ==========================
+   LABELS
+========================== */
+
+.form-card label{
+    display:block;
+    font-size:15px;
+    font-weight:600;
+    color:#374151;
+    margin-bottom:8px;
+}
+
+/* ==========================
+   INPUTS
+========================== */
+
+.custom-input{
+    width:100%;
+    min-height:55px;
+    border:1px solid #e5e7eb;
+    border-radius:14px;
+    padding:14px 16px;
+    outline:none;
+    background:#fafafa;
+    transition:.3s;
+    font-size:15px;
+}
+
+.custom-input:focus{
+    border-color:#ff6b35;
+    box-shadow:0 0 0 4px rgba(255,107,53,.15);
+    background:white;
+}
+
+textarea.custom-input{
+    resize:none;
+    padding-top:15px;
+}
+
+/* ==========================
+   UPLOAD BOX
+========================== */
+
+.upload-box{
+    border:2px dashed #ff6b35;
+    border-radius:20px;
+    padding:40px;
+    text-align:center;
+    background:#fff8f5;
+    transition:.3s;
+}
+
+.upload-box:hover{
+    background:#fff2eb;
+}
+
+.upload-box i{
+    font-size:50px;
+    color:#ff6b35;
+    margin-bottom:15px;
+}
+
+.upload-box p{
+    color:#666;
+    margin-bottom:15px;
+    font-size:15px;
+}
+
+.upload-box input[type="file"]{
+    width:100%;
+    padding:12px;
+    border:none;
+    background:white;
+    border-radius:10px;
+}
+
+/* ==========================
+   BUTTONS
+========================== */
+
+.button-group{
+    display:flex;
+    justify-content:flex-end;
+    gap:15px;
+    margin-top:35px;
+}
+
+.reset-btn{
+    border:none;
+    background:#e5e7eb;
+    color:#374151;
+    padding:14px 30px;
+    border-radius:12px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.reset-btn:hover{
+    background:#d1d5db;
+}
+
+.save-btn{
+    border:none;
+    background:#ff6b35;
+    color:white;
+    padding:14px 35px;
+    border-radius:12px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.save-btn:hover{
+    background:#e86a2c;
+    transform:translateY(-2px);
+}
+
+/* ==========================
+   SCROLLBAR
+========================== */
+
+::-webkit-scrollbar{
+    width:8px;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#ff6b35;
+    border-radius:20px;
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media(max-width:992px){
+
+    .sidebar{
+        width:220px;
+    }
+
+    .main-content{
+        margin-left:220px;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .sidebar{
+        display:none;
+    }
+
+    .main-content{
+        margin-left:0;
+        padding:20px;
+    }
+
+    .page-header{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:15px;
+    }
+
+    .form-card{
+        padding:25px;
+    }
+
+    .button-group{
+        flex-direction:column;
+    }
+
+    .reset-btn,
+    .save-btn{
+        width:100%;
+    }
+
+}
+
+@media(max-width:576px){
+
+    .main-content{
+        padding:15px;
+    }
+
+    .page-header h2{
+        font-size:28px;
+    }
+
+    .form-card{
+        padding:20px;
+        border-radius:20px;
+    }
+
+    .upload-box{
+        padding:25px;
+    }
+
+}

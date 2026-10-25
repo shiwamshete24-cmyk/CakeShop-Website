@@ -1,0 +1,293 @@
+/* =====================================
+   ADMIN LAYOUT
+===================================== */
+
+.admin-layout{
+    display:flex;
+    min-height:100vh;
+    background:#f5f7fb;
+}
+
+/* =====================================
+   SIDEBAR
+===================================== */
+
+.sidebar{
+    width:270px;
+    background:linear-gradient(
+        180deg,
+        #1e293b,
+        #0f172a
+    );
+    color:white;
+    height:100vh;
+    position:fixed;
+    left:0;
+    top:0;
+    padding:25px;
+    overflow-y:auto;
+    z-index:1000;
+}
+
+.sidebar-logo{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.sidebar-logo h3{
+    color:#ff6b35;
+    font-size:30px;
+    font-weight:700;
+}
+
+.sidebar-menu{
+    list-style:none;
+    padding:0;
+    margin:0;
+}
+
+.sidebar-menu li{
+    display:flex;
+    align-items:center;
+    gap:14px;
+    padding:14px 18px;
+    margin-bottom:10px;
+    border-radius:12px;
+    cursor:pointer;
+    transition:0.3s;
+    font-weight:500;
+}
+
+.sidebar-menu li:hover{
+    background:#334155;
+}
+
+.sidebar-menu li i{
+    font-size:18px;
+    width:20px;
+}
+
+.active-menu{
+    background:#ff6b35;
+}
+
+.active-menu:hover{
+    background:#ff6b35 !important;
+}
+
+/* =====================================
+   MAIN CONTENT
+===================================== */
+
+.main-content{
+    flex:1;
+    margin-left:270px;
+}
+
+.orders-page{
+    min-height:100vh;
+    padding:30px;
+}
+
+/* =====================================
+   HEADER
+===================================== */
+
+.orders-header{
+    margin-bottom:30px;
+}
+
+.orders-header h2{
+    font-size:34px;
+    font-weight:700;
+    color:#222;
+    margin-bottom:5px;
+}
+
+.orders-header p{
+    color:#777;
+    margin:0;
+}
+
+/* =====================================
+   STAT CARDS
+===================================== */
+
+.order-stat-card{
+    background:white;
+    padding:25px;
+    border-radius:20px;
+    box-shadow:0 8px 25px rgba(0,0,0,.06);
+    text-align:center;
+    transition:.3s;
+}
+
+.order-stat-card:hover{
+    transform:translateY(-5px);
+}
+
+.order-stat-card h3{
+    color:#ff6b35;
+    font-size:32px;
+    font-weight:700;
+    margin-bottom:10px;
+}
+
+.order-stat-card p{
+    color:#666;
+    margin:0;
+}
+
+/* =====================================
+   FILTER BOX
+===================================== */
+
+.order-filter-box{
+    background:white;
+    padding:20px;
+    border-radius:20px;
+    display:flex;
+    gap:15px;
+    margin-bottom:25px;
+    box-shadow:0 5px 20px rgba(0,0,0,.05);
+}
+
+.order-search{
+    flex:1;
+    height:50px;
+    border:1px solid #ddd;
+    border-radius:12px;
+    padding:0 15px;
+    outline:none;
+}
+
+.order-search:focus{
+    border-color:#ff6b35;
+}
+
+.order-select{
+    width:220px;
+    height:50px;
+    border:1px solid #ddd;
+    border-radius:12px;
+    padding:0 15px;
+    outline:none;
+}
+
+/* =====================================
+   TABLE CARD
+===================================== */
+
+.orders-card{
+    background:white;
+    border-radius:20px;
+    padding:25px;
+    box-shadow:0 8px 25px rgba(0,0,0,.06);
+}
+
+.table th{
+    font-weight:600;
+    color:#555;
+    border:none;
+}
+
+.table td{
+    vertical-align:middle;
+}
+
+/* =====================================
+   STATUS
+===================================== */
+
+.status-badge{
+    padding:8px 14px;
+    border-radius:25px;
+    font-size:13px;
+    font-weight:600;
+}
+
+.delivered{
+    background:#d4edda;
+    color:#198754;
+}
+
+.processing{
+    background:#cfe2ff;
+    color:#0d6efd;
+}
+
+.pending{
+    background:#fff3cd;
+    color:#856404;
+}
+
+/* =====================================
+   BUTTON
+===================================== */
+
+.view-order-btn{
+    border:none;
+    background:#ff6b35;
+    color:white;
+    padding:8px 16px;
+    border-radius:10px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.view-order-btn:hover{
+    background:#e85a28;
+}
+
+/* =====================================
+   RESPONSIVE
+===================================== */
+
+@media(max-width:992px){
+
+    .sidebar{
+        width:80px;
+        padding:20px 10px;
+    }
+
+    .sidebar-logo h3{
+        display:none;
+    }
+
+    .sidebar-menu li{
+        justify-content:center;
+    }
+
+    .sidebar-menu li span{
+        display:none;
+    }
+
+    .main-content{
+        margin-left:80px;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .sidebar{
+        display:none;
+    }
+
+    .main-content{
+        margin-left:0;
+    }
+
+    .orders-page{
+        padding:15px;
+    }
+
+    .order-filter-box{
+        flex-direction:column;
+    }
+
+    .order-select{
+        width:100%;
+    }
+
+}

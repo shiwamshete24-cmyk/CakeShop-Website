@@ -1,0 +1,157 @@
+.contacts1-message-page{
+    padding:20px;
+}
+
+.contacts1-page-header{
+    margin-bottom:30px;
+}
+
+.contacts1-page-header h2{
+    font-size:38px;
+    font-weight:700;
+    color:#222;
+    margin-bottom:5px;
+}
+
+.contacts1-page-header p{
+    color:#666;
+    font-size:16px;
+    margin:0;
+}
+
+.contacts1-stat-card{
+    background:#ffffff;
+    border-radius:20px;
+    padding:35px 20px;
+    text-align:center;
+    box-shadow:0 4px 15px rgba(0,0,0,0.08);
+    transition:.3s;
+    height:100%;
+}
+
+.contacts1-stat-card:hover{
+    transform:translateY(-5px);
+}
+
+.contacts1-stat-card h3{
+    font-size:45px;
+    font-weight:700;
+    color:#ff6b35;
+    margin-bottom:10px;
+}
+
+.contacts1-stat-card p{
+    margin:0;
+    font-size:18px;
+    color:#555;
+}
+
+.contacts1-search-card{
+    background:#ffffff;
+    padding:20px;
+    border-radius:20px;
+    margin-top:25px;
+    margin-bottom:25px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.08);
+}
+
+.contacts1-search-input{
+    width:100%;
+    height:55px;
+    border:1px solid #ddd;
+    border-radius:12px;
+    padding:0 15px;
+    font-size:16px;
+    outline:none;
+}
+
+.contacts1-search-input:focus{
+    border-color:#ff6b35;
+}
+
+.contacts1-table-card{
+    background:#ffffff;
+    border-radius:20px;
+    padding:20px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.08);
+}
+
+.contacts1-table-card .table{
+    margin-bottom:0;
+}
+
+.contacts1-table-card thead tr{
+    background:#f8f9fa;
+}
+
+.contacts1-table-card th{
+    font-size:16px;
+    font-weight:700;
+    color:#333;
+    padding:18px 12px;
+    border:none;
+}
+
+.contacts1-table-card td{
+    padding:18px 12px;
+    vertical-align:middle;
+    font-size:15px;
+}
+
+.contacts1-table-card tbody tr{
+    border-bottom:1px solid #eee;
+}
+
+.contacts1-table-card tbody tr:hover{
+    background:#fafafa;
+}
+
+.contacts1-view-btn{
+    border:none;
+    background:#ff6b35;
+    color:white;
+    padding:8px 18px;
+    border-radius:10px;
+    font-size:14px;
+    font-weight:600;
+    margin-right:8px;
+    cursor:pointer;
+}
+
+.contacts1-view-btn:hover{
+    background:#f2551b;
+}
+
+.contacts1-delete-btn{
+    border:none;
+    background:#dc3545;
+    color:white;
+    padding:8px 18px;
+    border-radius:10px;
+    font-size:14px;
+    font-weight:600;
+    cursor:pointer;
+}
+
+.contacts1-delete-btn:hover{
+    background:#c82333;
+}
+
+@media(max-width:768px){
+
+    .contacts1-page-header h2{
+        font-size:28px;
+    }
+
+    .contacts1-stat-card h3{
+        font-size:32px;
+    }
+
+    .contacts1-view-btn,
+    .contacts1-delete-btn{
+        width:100%;
+        margin-bottom:5px;
+        margin-right:0;
+    }
+
+}

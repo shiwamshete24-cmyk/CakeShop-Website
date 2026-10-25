@@ -1,0 +1,235 @@
+/* =================================
+   PAGE
+================================= */
+
+.admin-login-page{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#f4f7fc;
+    padding:30px;
+}
+
+/* =================================
+   CONTAINER
+================================= */
+
+.admin-login-container{
+    width:100%;
+    max-width:1200px;
+    min-height:700px;
+    background:white;
+    border-radius:30px;
+    overflow:hidden;
+    display:flex;
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+}
+
+/* =================================
+   LEFT
+================================= */
+
+.admin-left{
+    width:50%;
+    background:linear-gradient(
+        135deg,
+        #111827,
+        #1f2937
+    );
+
+    color:white;
+    padding:60px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.admin-brand{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    margin-bottom:30px;
+}
+
+.admin-brand i{
+    font-size:45px;
+    color:#ff6b35;
+}
+
+.admin-brand h1{
+    margin:0;
+    font-size:38px;
+    font-weight:700;
+}
+
+.admin-left h2{
+    font-size:40px;
+    margin-bottom:20px;
+}
+
+.admin-left p{
+    color:#d1d5db;
+    line-height:1.8;
+    margin-bottom:35px;
+}
+
+.admin-features{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.feature-box{
+    background:rgba(255,255,255,.08);
+    padding:18px;
+    border-radius:15px;
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.feature-box i{
+    color:#ff6b35;
+    font-size:20px;
+}
+
+/* =================================
+   RIGHT
+================================= */
+
+.admin-right{
+    width:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:50px;
+}
+
+/* =================================
+   LOGIN CARD
+================================= */
+
+.login-card{
+    width:100%;
+    max-width:450px;
+}
+
+.login-card h2{
+    font-size:34px;
+    font-weight:700;
+    color:#222;
+}
+
+.login-card p{
+    color:#777;
+    margin-bottom:30px;
+}
+
+/* =================================
+   FORM
+================================= */
+
+.form-group{
+    margin-bottom:20px;
+}
+
+.form-group label{
+    display:block;
+    margin-bottom:8px;
+    font-weight:600;
+    color:#333;
+}
+
+.form-group input{
+    width:100%;
+    height:55px;
+    border:1px solid #ddd;
+    border-radius:12px;
+    padding:0 15px;
+    outline:none;
+    transition:.3s;
+}
+
+.form-group input:focus{
+    border-color:#ff6b35;
+    box-shadow:0 0 0 4px rgba(255,107,53,.12);
+}
+
+/* =================================
+   REMEMBER
+================================= */
+
+.remember-row{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:25px;
+}
+
+.remember-row a{
+    color:#ff6b35;
+    text-decoration:none;
+}
+
+.remember-row label{
+    display:flex;
+    gap:8px;
+    align-items:center;
+}
+
+/* =================================
+   BUTTON
+================================= */
+
+.admin-login-btn{
+    width:100%;
+    height:55px;
+    border:none;
+    background:#ff6b35;
+    color:white;
+    border-radius:12px;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.admin-login-btn:hover{
+    background:#e85a28;
+    transform:translateY(-2px);
+}
+
+/* =================================
+   RESPONSIVE
+================================= */
+
+@media(max-width:992px){
+
+    .admin-login-container{
+        flex-direction:column;
+    }
+
+    .admin-left,
+    .admin-right{
+        width:100%;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .admin-left,
+    .admin-right{
+        padding:30px;
+    }
+
+    .admin-left h2{
+        font-size:30px;
+    }
+
+    .admin-brand h1{
+        font-size:30px;
+    }
+
+}

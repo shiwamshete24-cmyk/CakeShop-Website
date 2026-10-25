@@ -1,0 +1,295 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+}
+
+/* PAGE */
+
+.product-page-main{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:30px;
+}
+
+/* CARD */
+
+.product-card-main{
+    width:100%;
+    max-width:1300px;
+    background:#ffffff;
+    border-radius:25px;
+    overflow:hidden;
+    display:flex;
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+}
+
+/* IMAGE SECTION */
+
+.product-image-section{
+    flex:1;
+    position:relative;
+    background:linear-gradient(
+        135deg,
+        #fff7ed,
+        #fff1f2
+    );
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:40px;
+}
+
+.product-image-glow{
+    position:absolute;
+    width:350px;
+    height:350px;
+    background:#fbbf24;
+    opacity:.15;
+    border-radius:50%;
+    filter:blur(80px);
+}
+
+.product-main-image{
+    width:100%;
+    max-width:500px;
+    border-radius:20px;
+    position:relative;
+    z-index:2;
+    transition:.4s;
+}
+
+.product-main-image:hover{
+    transform:scale(1.05);
+}
+
+/* CONTENT */
+
+.product-content-section{
+    flex:1;
+    padding:40px;
+}
+
+.product-category-tag{
+    display:inline-block;
+    background:#fff7ed;
+    color:#f59e0b;
+    padding:6px 14px;
+    border-radius:20px;
+    font-size:13px;
+    font-weight:600;
+}
+
+/* TITLE */
+
+.product-title-row{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-top:15px;
+}
+
+.product-title1{
+    font-size:38px;
+    color:#111827;
+    font-weight:700;
+}
+
+.product-wishlist-btn{
+    width:50px;
+    height:50px;
+    border:none;
+    border-radius:50%;
+    background:#fff0f3;
+    color:#e11d48;
+    font-size:22px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.product-wishlist-btn:hover{
+    transform:scale(1.1);
+}
+
+/* RATING */
+
+.product-rating-row{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    margin-top:20px;
+}
+
+.product-rating-badge{
+    background:#16a34a;
+    color:white;
+    padding:7px 14px;
+    border-radius:8px;
+    font-size:14px;
+}
+
+.product-review-count{
+    color:#666;
+    font-size:14px;
+}
+
+/* PRICE */
+
+.product-price-row{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    margin-top:20px;
+}
+
+.product-offer-price{
+    font-size:48px;
+    font-weight:700;
+    color:#111827;
+}
+
+.product-actual-price{
+    text-decoration:line-through;
+    color:#999;
+    font-size:20px;
+}
+
+.product-discount-badge{
+    color:#16a34a;
+    font-weight:700;
+    font-size:18px;
+}
+
+/* DESCRIPTION */
+
+.product-description-text{
+    margin-top:20px;
+    color:#555;
+    line-height:1.8;
+    font-size:15px;
+}
+
+/* FEATURE CHIPS */
+
+.product-feature-row{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+    margin-top:25px;
+}
+
+.product-feature-card{
+    background:#fff7ed;
+    color:#444;
+    padding:12px 18px;
+    border-radius:12px;
+    font-size:14px;
+    font-weight:500;
+    transition:.3s;
+}
+
+.product-feature-card:hover{
+    transform:translateY(-3px);
+}
+
+/* BENEFITS */
+
+.product-benefits-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:12px;
+    margin-top:25px;
+}
+
+.product-benefit-card{
+    background:#f8fafc;
+    padding:15px;
+    border-radius:12px;
+    font-size:14px;
+    color:#444;
+    transition:.3s;
+}
+
+.product-benefit-card:hover{
+    transform:translateY(-3px);
+}
+
+/* BUTTONS */
+
+.product-button-row{
+    display:flex;
+    gap:15px;
+    margin-top:30px;
+}
+
+.product-cart-btn{
+    flex:1;
+    border:none;
+    background:#fbbf24;
+    color:#111;
+    padding:15px;
+    border-radius:14px;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.product-buy-btn{
+    flex:1;
+    border:none;
+    background:#111827;
+    color:white;
+    padding:15px;
+    border-radius:14px;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.product-cart-btn:hover,
+.product-buy-btn:hover{
+    transform:translateY(-3px);
+}
+
+/* RESPONSIVE */
+
+@media(max-width:992px){
+
+    .product-card-main{
+        flex-direction:column;
+    }
+
+    .product-content-section{
+        padding:25px;
+    }
+
+    .product-title{
+        font-size:30px;
+    }
+
+    .product-offer-price{
+        font-size:36px;
+    }
+
+    .product-benefits-grid{
+        grid-template-columns:1fr;
+    }
+
+    .product-button-row{
+        flex-direction:column;
+    }
+
+    .product-price-row{
+        flex-wrap:wrap;
+    }
+}

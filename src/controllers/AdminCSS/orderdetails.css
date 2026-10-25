@@ -1,0 +1,265 @@
+/* ==========================
+   ORDER DETAILS PAGE
+========================== */
+
+.order-details-page{
+    min-height:100vh;
+    background:#f5f7fb;
+    padding:30px;
+}
+
+/* ==========================
+   HEADER
+========================== */
+
+.details-header{
+    margin-bottom:30px;
+}
+
+.details-header h2{
+    font-size:32px;
+    font-weight:700;
+    color:#222;
+    margin-bottom:5px;
+}
+
+.details-header p{
+    color:#777;
+    margin:0;
+}
+
+/* ==========================
+   COMMON CARD
+========================== */
+
+.details-card{
+    background:#fff;
+    padding:25px;
+    border-radius:20px;
+    box-shadow:0 5px 20px rgba(0,0,0,.05);
+    transition:.3s;
+}
+
+.details-card:hover{
+    transform:translateY(-3px);
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.details-card h4{
+    font-size:20px;
+    font-weight:700;
+    margin-bottom:20px;
+    color:#222;
+}
+
+/* ==========================
+   INFO ROW
+========================== */
+
+.info-row{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:12px 0;
+    border-bottom:1px solid #f1f1f1;
+}
+
+.info-row:last-child{
+    border-bottom:none;
+}
+
+.info-row span{
+    color:#666;
+}
+
+.info-row strong{
+    color:#222;
+    font-weight:600;
+}
+
+/* ==========================
+   STATUS TAGS
+========================== */
+
+.status-tag{
+    padding:8px 15px;
+    border-radius:30px;
+    font-size:13px;
+    font-weight:600;
+}
+
+.delivered{
+    background:#d4edda;
+    color:#198754;
+}
+
+.paid{
+    background:#cfe2ff;
+    color:#0d6efd;
+}
+
+.processing{
+    background:#fff3cd;
+    color:#856404;
+}
+
+.cancelled{
+    background:#ffe5e5;
+    color:#dc3545;
+}
+
+/* ==========================
+   ADDRESS
+========================== */
+
+.address-text{
+    margin:0;
+    color:#555;
+    line-height:1.8;
+    font-size:15px;
+}
+
+/* ==========================
+   TABLE
+========================== */
+
+.table{
+    margin-bottom:0;
+}
+
+.table thead{
+    background:#f8f9fa;
+}
+
+.table th{
+    border:none;
+    padding:18px;
+    color:#555;
+    font-weight:600;
+}
+
+.table td{
+    padding:18px;
+    vertical-align:middle;
+}
+
+.table tbody tr{
+    transition:.3s;
+}
+
+.table tbody tr:hover{
+    background:#fff8f5;
+}
+
+/* ==========================
+   STATUS UPDATE
+========================== */
+
+.status-update{
+    display:flex;
+    gap:15px;
+    align-items:center;
+}
+
+.status-select{
+    flex:1;
+    height:50px;
+    border:1px solid #ddd;
+    border-radius:12px;
+    padding:0 15px;
+    outline:none;
+    transition:.3s;
+}
+
+.status-select:focus{
+    border-color:#ff6b35;
+    box-shadow:0 0 0 4px rgba(255,107,53,.12);
+}
+
+.update-btn{
+    border:none;
+    background:#ff6b35;
+    color:white;
+    padding:12px 25px;
+    border-radius:12px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.update-btn:hover{
+    background:#e85a28;
+    transform:translateY(-2px);
+}
+
+/* ==========================
+   SCROLLBAR
+========================== */
+
+::-webkit-scrollbar{
+    width:8px;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#ff6b35;
+    border-radius:20px;
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media(max-width:992px){
+
+    .order-details-page{
+        padding:20px;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .details-header h2{
+        font-size:26px;
+    }
+
+    .details-card{
+        padding:20px;
+    }
+
+    .status-update{
+        flex-direction:column;
+    }
+
+    .status-select,
+    .update-btn{
+        width:100%;
+    }
+
+    .table th,
+    .table td{
+        padding:12px;
+    }
+
+}
+
+@media(max-width:576px){
+
+    .order-details-page{
+        padding:15px;
+    }
+
+    .details-card{
+        padding:15px;
+    }
+
+    .details-card h4{
+        font-size:18px;
+    }
+
+    .info-row{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:5px;
+    }
+
+}

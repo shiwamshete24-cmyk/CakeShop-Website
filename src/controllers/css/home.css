@@ -1,0 +1,537 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    /* border: 2px solid red; */
+}
+
+.bg-image {
+    width: 100%;
+    height: auto;
+    background-image: url("/src/assets/h1_hero1.png");
+    background-repeat: no-repeat;
+    /* background-size: 100% 100%; */
+    background-position: right;
+    background-attachment: scroll;
+    padding: 60px 0px;
+    margin: 0px;
+
+}
+
+.fifth {
+    width: 100%;
+    height: 65vh;
+    background-image: url("/src/assets/video-bg.png");
+    background-position: top;
+    /* background-size: 100% 100%; */
+    /* background-attachment: fixed; */
+    background-repeat: no-repeat;
+    text-align: center;
+    align-content: center;
+
+}
+
+
+.video {
+
+    font-size: 80px;
+    color: white;
+    text-shadow: 10px 10px 10px rgb(228, 113, 113);
+
+}
+
+
+.text-font {
+
+    font-size: 36px;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 700;
+
+}
+
+.text-p-font {
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 0px;
+    word-spacing: 2px;
+
+}
+
+.aa {
+    /* text-align: center; */
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+
+}
+
+.card-name {
+
+    padding: 100px 0px;
+
+}
+
+.card-name2 {
+    padding-bottom: 80px;
+    background-color: white;
+}
+
+.btn1 {
+    border: none;
+    padding: 10px 10px;
+    text-transform: capitalize;
+    border-radius: 30px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Quicksand", sans-serif;
+    box-shadow: 0px 17px 27px rgba(240, 69, 6, 0.27);
+    z-index: 1;
+    display: inline-block;
+    background-size: 200%;
+    transition: 0.6s;
+    background-image: linear-gradient(to left, #F04506, #d83e06, #F04506);
+    background-position: right;
+}
+
+.design {
+
+    color: #F04506;
+    letter-spacing: 3px;
+    font-size: 18px;
+
+}
+
+.design11 {
+
+    color: #F04506;
+    letter-spacing: 2px;
+    font-size: 14px;
+
+
+
+}
+
+.design1 {
+
+    font-size: 36px;
+    font-family: "Quicksand", sans-serif;
+
+
+}
+
+.design2 {
+
+    font-size: 33px;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 600;
+}
+
+.aaa {
+
+    font-size: 22px;
+    font-family: "Quicksand", sans-serif;
+    font-weight: bold;
+
+}
+
+.card-color {
+
+    background-color: #FFF5F2;
+    border: none;
+
+
+
+}
+
+.ab {
+    font-size: 13px;
+    padding: 5px;
+    line-height: 25px;
+}
+
+.img-class {
+
+    border-bottom-right-radius: 30%;
+
+
+}
+
+.fourth-bg-color {
+    background-color: #FFF5F2;
+    padding: 50px 0px;
+}
+
+.fourth-1 {
+    justify-content: center;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+.fourth-h {
+    font-size: 22px;
+    padding: 10px 0px;
+}
+
+.fourth-p {
+    font-size: 15px;
+}
+
+
+.cake-item {
+    overflow: hidden;
+}
+
+.cake-img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.cake-img:hover {
+    transform: scale(1.05);
+}
+
+.six-height {
+    height: 30%;
+}
+
+
+
+.footer-section {
+    background: #f7f1ef;
+    padding: 100px 0 30px;
+    position: relative;
+}
+
+.footer-logo h2 {
+    color: #f95b0c;
+    font-size: 48px;
+    font-weight: 700;
+    font-family: cursive;
+}
+
+.logo-circle {
+    width: 60px;
+    height: 60px;
+    background: #f95b0c;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+}
+
+.footer-text {
+    color: #666;
+    line-height: 2;
+    max-width: 320px;
+}
+
+.footer-section h4 {
+    margin-bottom: 30px;
+    font-size: 28px;
+    color: #222;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 18px;
+    color: #555;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.footer-links li:hover {
+    color: #f95b0c;
+    padding-left: 5px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.social-icons i {
+    color: #f95b0c;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.address {
+    color: #555;
+    margin-top: 20px;
+}
+
+.phone-number {
+    color: #f95b0c;
+    font-size: 18px;
+    margin-top: 25px;
+    font-weight: 500;
+}
+
+.footer-bottom {
+    border-top: 1px solid #ddd;
+    margin-top: 80px;
+    padding-top: 25px;
+    color: #666;
+}
+
+.scroll-top {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    background: #f95b0c;
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.video-play {
+
+    width: 300px;
+    height: 200px;
+
+}
+
+@media only screen and (min-width:768px) {
+
+    .bg-image {
+        width: 100%;
+        height: 88vh;
+        background-repeat: no-repeat;
+        background-position: right;
+        padding: 0px;
+        margin: 0px;
+
+    }
+
+    .video-play {
+
+        width: 700px;
+        height: 350px;
+
+    }
+
+    .text-font {
+        font-size: 60px;
+        font-weight: 700;
+
+    }
+
+    .text-p-font {
+
+        font-size: 18px;
+        font-weight: 600;
+        padding: 15px 0px;
+        word-spacing: 2px;
+    }
+
+    .aa {
+        width: 59%;
+        position: relative;
+        top: 20%;
+        left: 5%;
+    }
+
+    .design2 {
+
+        font-size: 36px;
+        font-family: "Quicksand", sans-serif;
+        font-weight: 600;
+
+
+    }
+
+    .video-play {
+        width: 300px;
+        height: 300px;
+    }
+
+    .card-name2 {
+
+        /* padding-top: 30px; */
+        padding-bottom: 50px;
+    }
+
+    .fourth-1 {
+        justify-content: start;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    .fourth-h {
+        font-size: 18px;
+        padding-top: 20px;
+    }
+
+    .fourth-p {
+        font-size: 15px;
+    }
+
+
+    .fifth {
+        width: 100%;
+        height: 65vh;
+        background-image: url("/src/assets/video-bg.png");
+        background-position: top;
+        background-size: 100% 100%;
+        /* background-attachment: fixed; */
+        background-repeat: no-repeat;
+        text-align: center;
+        align-content: center;
+
+
+    }
+
+    .video {
+        font-size: 100px;
+        color: white;
+        text-shadow: 10px 10px 10px rgb(228, 113, 113);
+
+    }
+
+    .six-height {
+        height: 30%;
+    }
+
+
+    .footer-section {
+        text-align: center;
+    }
+
+    .footer-logo {
+        justify-content: center;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+
+    .phone-number {
+        font-size: 18px;
+
+
+    }
+
+
+}
+
+
+
+@media only screen and (min-width:992px) {
+
+    .video-play {
+
+        width: 600px;
+        height: 300px;
+
+    }
+
+
+
+    .bg-image {
+        width: 100%;
+        height: 88vh;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-attachment: scroll;
+        padding: 0px;
+        margin: 0px;
+
+    }
+
+    .text-font {
+        font-size: 65px;
+        font-weight: 600;
+        /* color: white; */
+
+    }
+
+
+    .text-p-font {
+        font-size: 14px;
+        font-weight: 600;
+        color: rgb(41, 71, 110);
+        /* font-family: 'Quicksand'; */
+    }
+
+    .aa {
+        width: 45%;
+        position: relative;
+        top: 16%;
+        left: 15%;
+
+    }
+
+    .design2 {
+
+        font-size: 36px;
+        font-family: "Quicksand", sans-serif;
+        font-weight: 600;
+
+
+
+    }
+
+    .card-name2 {
+
+        padding-top: 50px;
+        padding-bottom: 100px;
+    }
+
+    .fourth-1 {
+        justify-content: center;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+
+    .fourth-h {
+        font-size: 18px;
+        padding-top: 15px;
+    }
+
+    .fourth-p {
+        font-size: 13px;
+    }
+
+    .fifth {
+        width: 100%;
+        height: 65vh;
+        background-image: url("/src/assets/video-bg.png");
+        background-position: top;
+        background-size: 100% 100%;
+        /* background-attachment: fixed; */
+        background-repeat: no-repeat;
+        text-align: center;
+        align-content: center;
+
+
+    }
+
+    .video {
+        font-size: 100px;
+        color: white;
+        text-shadow: 10px 10px 10px rgb(228, 113, 113);
+
+    }
+
+    .six-height {
+        height: 50%;
+    }
+
+}

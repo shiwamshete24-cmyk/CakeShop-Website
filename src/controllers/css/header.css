@@ -1,0 +1,343 @@
+/* ==================================
+   GLOBAL
+================================== */
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:'Poppins',sans-serif;
+  background:#f8f9fa;
+}
+
+/* ==================================
+   HEADER
+================================== */
+
+.header{
+  position:sticky;
+  top:0;
+  z-index:1000;
+  background:rgba(255,255,255,0.95);
+  backdrop-filter:blur(12px);
+  box-shadow:0 4px 20px rgba(0,0,0,0.08);
+}
+
+.header-content{
+  height:85px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+/* ==================================
+   LOGO
+================================== */
+
+.logo{
+  width:140px;
+  height:70px;
+  object-fit:contain;
+  transition:0.3s;
+}
+
+.logo:hover{
+  transform:scale(1.05);
+}
+
+/* ==================================
+   DESKTOP MENU
+================================== */
+
+.desktop-menu ul{
+  display:flex;
+  align-items:center;
+  gap:35px;
+  list-style:none;
+  margin:0;
+}
+
+.desktop-menu a{
+  text-decoration:none;
+  color:#222;
+  font-size:15px;
+  font-weight:600;
+  position:relative;
+  transition:0.3s;
+}
+
+.desktop-menu a:hover{
+  color:#dc3545;
+}
+
+.active-link{
+  color:#dc3545 !important;
+}
+
+.active-link::after{
+  content:"";
+  position:absolute;
+  left:0;
+  bottom:-10px;
+  width:100%;
+  height:3px;
+  background:#dc3545;
+  border-radius:50px;
+}
+
+/* ==================================
+   RIGHT SECTION
+================================== */
+
+.header-right{
+  display:flex;
+  align-items:center;
+}
+
+/* ==================================
+   CART BUTTON
+================================== */
+
+.cart-btn{
+  width:48px;
+  height:48px;
+  border-radius:50%;
+  background:white;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-decoration:none;
+  color:#222;
+  font-size:18px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.08);
+  transition:0.3s;
+}
+
+.cart-btn:hover{
+  background:#dc3545;
+  color:white;
+  transform:translateY(-3px);
+}
+
+/* ==================================
+   PROFILE BUTTON
+================================== */
+
+.profile-btn{
+  border:none;
+  background:white;
+  border-radius:50px;
+  padding:8px 15px;
+  display:flex;
+  align-items:center;
+  gap:10px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.08);
+  transition:0.3s;
+}
+
+.profile-btn:hover{
+  transform:translateY(-3px);
+}
+
+.profile-avatar{
+  width:38px;
+  height:38px;
+  border-radius:50%;
+  background:#dc3545;
+  color:white;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:700;
+  font-size:15px;
+}
+
+.profile-name{
+  font-size:14px;
+  font-weight:600;
+  color:#333;
+}
+
+/* ==================================
+   DROPDOWN
+================================== */
+
+.custom-dropdown{
+  width:280px;
+  border:none;
+  border-radius:20px;
+  overflow:hidden;
+  padding:0;
+  box-shadow:0 15px 35px rgba(0,0,0,0.15);
+}
+
+.profile-header{
+  background:linear-gradient(
+      135deg,
+      #dc3545,
+      #ff7b8a
+  );
+  text-align:center;
+  color:white;
+  padding:25px 15px;
+}
+
+.profile-avatar-large{
+  width:70px;
+  height:70px;
+  border-radius:50%;
+  background:white;
+  color:#dc3545;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:26px;
+  font-weight:700;
+  margin:0 auto 10px;
+}
+
+.profile-header h6{
+  margin-bottom:5px;
+  font-size:18px;
+}
+
+.profile-header p{
+  margin:0;
+  font-size:13px;
+  opacity:0.9;
+}
+
+/* ==================================
+   DROPDOWN ITEMS
+================================== */
+
+.custom-dropdown .dropdown-item{
+  padding:14px 20px;
+  display:flex;
+  align-items:center;
+  gap:12px;
+  font-weight:500;
+  transition:0.3s;
+}
+
+.custom-dropdown .dropdown-item i{
+  color:#dc3545;
+  width:18px;
+}
+
+.custom-dropdown .dropdown-item:hover{
+  background:#fff3f5;
+  color:#dc3545;
+}
+
+/* ==================================
+   LOGOUT BUTTON
+================================== */
+
+.logout-btn{
+  width:85%;
+  border:none;
+  background:#dc3545;
+  color:white;
+  padding:10px;
+  border-radius:10px;
+  font-weight:600;
+  margin-bottom:15px;
+  transition:0.3s;
+}
+
+.logout-btn:hover{
+  background:#bb2d3b;
+}
+
+/* ==================================
+   MOBILE BUTTON
+================================== */
+
+.mobile-btn{
+  display:none;
+  width:45px;
+  height:45px;
+  border:none;
+  border-radius:12px;
+  background:#dc3545;
+  color:white;
+  font-size:18px;
+}
+
+/* ==================================
+   MOBILE MENU
+================================== */
+
+.mobile-menu{
+  background:white;
+  border-radius:15px;
+  margin-top:10px;
+  box-shadow:0 8px 25px rgba(0,0,0,0.08);
+}
+
+.mobile-menu ul{
+  list-style:none;
+  padding:15px;
+  margin:0;
+}
+
+.mobile-menu li{
+  padding:10px 0;
+  text-align:center;
+}
+
+.mobile-menu a{
+  text-decoration:none;
+  color:#222;
+  font-weight:600;
+}
+
+.mobile-menu a:hover{
+  color:#dc3545;
+}
+
+.mobile-logout-btn{
+  border:none;
+  background:#dc3545;
+  color:white;
+  padding:10px 25px;
+  border-radius:10px;
+  margin-top:10px;
+}
+
+/* ==================================
+   RESPONSIVE
+================================== */
+
+@media(max-width:991px){
+
+  .desktop-menu{
+    display:none;
+  }
+
+  .header-right{
+    display:none !important;
+  }
+
+  .mobile-btn{
+    display:block;
+  }
+
+}
+
+@media(max-width:576px){
+
+  .logo{
+    width:110px;
+    height:60px;
+  }
+
+  .header-content{
+    height:75px;
+  }
+
+}

@@ -1,0 +1,68 @@
+.product-bg-img {
+    width: 100%;
+    height: 42vh;
+    background-image: url("src/assets/h2_hero2.png");
+    /* background-size: 100% 100%; */
+    background-repeat: no-repeat;
+    background-position: 90% 100%;
+
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    /* border: 2px solid red; */
+
+}
+
+.product-name {
+    font-size: 60px;
+    font-family: "Quicksand";
+    font-weight: 600;
+    text-shadow: 4px 4px 10px red;
+}
+
+
+
+
+@media only screen and (min-width:768px) {
+
+    .product-bg-img {
+        width: 100%;
+        height: 42vh;
+        background-image: url("src/assets/h2_hero2.png");
+        /* background-size: 100% 100%; */
+        background-repeat: no-repeat;
+        background-position: 85% 100%;
+
+    }
+
+    .product-name {
+        font-size: 70px;
+        font-family: "Quicksand";
+        font-weight: 600;
+       text-shadow: 4px 4px 40px red;
+    }
+
+}
+
+@media only screen and (min-width:992px) {
+
+    .product-bg-img {
+        width: 100%;
+        height: 42vh;
+        background-image: url("src/assets/h2_hero2.png");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+
+    }
+
+    .product-name {
+        font-size: 80px;
+        font-family: "Quicksand";
+        font-weight: 600;
+        text-shadow: 4px 4px 100px red;
+    }
+
+}
